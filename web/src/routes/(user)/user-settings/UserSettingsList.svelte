@@ -1,11 +1,10 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import ChangePinCodeSettings from './PinCodeSettings.svelte';
-  import DownloadSettings from './DownloadSettings.svelte';
-  import FeatureSettings from './FeatureSettings.svelte';
-  import NotificationsSettings from './NotificationsSettings.svelte';
-  import UserPurchaseSettings from './UserPurchaseSettings.svelte';
-  import UserUsageStatistic from './UserUsageStatistic.svelte';
+  import ChangePinCodeSettings from '$lib/components/user-settings-page/PinCodeSettings.svelte';
+  import DownloadSettings from '$lib/components/user-settings-page/download-settings.svelte';
+  import FeatureSettings from '$lib/components/user-settings-page/feature-settings.svelte';
+  import NotificationsSettings from '$lib/components/user-settings-page/notifications-settings.svelte';
+  import UserUsageStatistic from '$lib/components/user-settings-page/user-usage-statistic.svelte';
   import { OpenQueryParam, QueryParameter } from '$lib/constants';
   import { featureFlagsManager } from '$lib/managers/feature-flags-manager.svelte';
   import { oauth } from '$lib/utils';
@@ -20,7 +19,6 @@
     mdiDownload,
     mdiFeatureSearchOutline,
     mdiFormTextboxPassword,
-    mdiKeyOutline,
     mdiLockSmart,
     mdiServerOutline,
     mdiTwoFactorAuthentication,
@@ -149,15 +147,5 @@
     autoScrollTo={true}
   >
     <ChangePinCodeSettings />
-  </SettingAccordion>
-
-  <SettingAccordion
-    icon={mdiKeyOutline}
-    key={OpenQueryParam.PURCHASE_SETTINGS}
-    title={$t('user_purchase_settings')}
-    subtitle={$t('user_purchase_settings_description')}
-    autoScrollTo={true}
-  >
-    <UserPurchaseSettings />
   </SettingAccordion>
 </SettingAccordionState>

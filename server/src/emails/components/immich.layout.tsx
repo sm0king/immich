@@ -51,7 +51,7 @@ export const ImmichLayout = ({ children, preview }: ImmichLayoutProps) => (
               <Img
                 src="https://immich.app/img/immich-logo-inline-light.png"
                 className="h-12 antialiased rounded-none w-full"
-                alt="Immich"
+                alt="家庭相册库"
               />
             </Section>
 

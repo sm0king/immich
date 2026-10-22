@@ -29,7 +29,7 @@ export const ImmichFooter = () => (
     </Row>
 
     <Text className="text-center text-sm text-immich-footer">
-      <Link href="https://immich.app">Immich</Link> project is available under GNU AGPL v3 license.
+      <Link href="https://immich.app">家庭相册库</Link> project is available under GNU AGPL v3 license.
     </Text>
   </>
 );

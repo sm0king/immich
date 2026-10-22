@@ -27,7 +27,7 @@ export const load = (async ({ fetch, url }) => {
   return {
     error,
     meta: {
-      title: 'Immich',
+      title: '家庭相册库',
     },
   };
 }) satisfies LayoutLoad;

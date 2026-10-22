@@ -91,9 +91,23 @@ class _ImmichLogoWithText extends StatelessWidget {
   Widget build(BuildContext context) => AnimatedOpacity(
     opacity: IconTheme.of(context).opacity ?? 1,
     duration: kThemeChangeDuration,
-    child: SvgPicture.asset(
-      context.isDarkTheme ? 'assets/immich-logo-inline-dark.svg' : 'assets/immich-logo-inline-light.svg',
-      height: 40,
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SvgPicture.asset(
+          context.isDarkTheme ? 'assets/immich-logo.svg' : 'assets/immich-logo.svg',
+          height: 32,
+        ),
+        const SizedBox(width: 8),
+        Text(
+          '家庭相册库',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: context.primaryColor,
+          ),
+        ),
+      ],
     ),
   );
 }
