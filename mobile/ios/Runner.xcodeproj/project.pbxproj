@@ -953,7 +953,7 @@
 				);
 				MARKETING_VERSION = 1.121.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.alextran.immich;
-				PRODUCT_NAME = Immich;
+				PRODUCT_NAME = "家庭相册库";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

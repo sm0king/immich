@@ -356,7 +356,7 @@
 {/snippet}
 
 <svelte:head>
-  <title>{data.meta.title} - Immich</title>
+  <title>{data.meta.title} - 家庭相册库</title>
 </svelte:head>
 
 <main class="pt-24 immich-scrollbar">

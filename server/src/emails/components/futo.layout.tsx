@@ -63,7 +63,7 @@ export const FutoLayout = ({ children, preview }: FutoLayoutProps) => (
               <Img
                 src="https://immich.app/img/immich-logo-inline-light.png"
                 className="h-12 antialiased rounded-none"
-                alt="Immich"
+                alt="家庭相册库"
               />
             </Section>
 
